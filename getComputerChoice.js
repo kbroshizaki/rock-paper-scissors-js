@@ -1,0 +1,14 @@
+let getComputerChoice = function (max) {
+    let choice = Math.floor(Math.random() * max);
+
+    if (choice === 0) {
+        return "rock";
+    } else if (choice === 1) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+};
+
+//console.log(getComputerChoice(3));
+module.exports = getComputerChoice
